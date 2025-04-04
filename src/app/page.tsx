@@ -1,3 +1,4 @@
+import CategoryList from "@/components/product/CategoryList";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -78,73 +79,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-sky-100 to-indigo-100 dark:from-gray-800 dark:to-gray-700"></div>
       </div>
 
-      {/* 카테고리 링크 섹션 */}
-      <div className="mt-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">카테고리</h2>
-        <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
-          <Link href="/categories/clothing" className="group bg-gray-100 dark:bg-gray-800 rounded-lg p-6 text-center hover:bg-gray-200 dark:hover:bg-gray-700">
-            <div className="flex justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10 text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 14l2 2m6-4l2 2M6 9l6 6 6-6M6 4h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2z" />
-              </svg>
-            </div>
-            <p className="mt-4 text-gray-700 dark:text-gray-300 font-medium">의류</p>
-          </Link>
-          <Link href="/categories/electronics" className="group bg-gray-100 dark:bg-gray-800 rounded-lg p-6 text-center hover:bg-gray-200 dark:hover:bg-gray-700">
-            <div className="flex justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10 text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <p className="mt-4 text-gray-700 dark:text-gray-300 font-medium">전자기기</p>
-          </Link>
-          <Link href="/categories/accessories" className="group bg-gray-100 dark:bg-gray-800 rounded-lg p-6 text-center hover:bg-gray-200 dark:hover:bg-gray-700">
-            <div className="flex justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10 text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-              </svg>
-            </div>
-            <p className="mt-4 text-gray-700 dark:text-gray-300 font-medium">액세서리</p>
-          </Link>
-          <Link href="/categories" className="group bg-gray-100 dark:bg-gray-800 rounded-lg p-6 text-center hover:bg-gray-200 dark:hover:bg-gray-700">
-            <div className="flex justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10 text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
-                />
-              </svg>
-            </div>
-            <p className="mt-4 text-gray-700 dark:text-gray-300 font-medium">모든 카테고리</p>
-          </Link>
-        </div>
-      </div>
+      <CategoryList />
 
       {/* 추천 상품 섹션 */}
       <div className="mt-16 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
