@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### 1. **Home (홈)**
 
-## Getting Started
+- 메인 화면으로 이동
+- 추천 상품, 인기 상품, 새로운 상품 등을 보여줌
 
-First, run the development server:
+### 2. **Categories (카테고리)**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- ~상품을 카테고리별로 분류하여 보여줌~
+- ~사용자에게 다양한 상품을 쉽게 찾을 수 있도록 함~
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. **Search (검색)**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 상품 검색 기능 제공
+- 키워드로 상품을 검색하고 필터링할 수 있는 기능 포함
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. **Cart (장바구니)**
 
-## Learn More
+- 사용자가 담은 상품들을 확인하고 관리할 수 있는 장바구니 화면
+- 수량 변경, 상품 삭제, 총 가격 확인 등의 기능 제공
 
-To learn more about Next.js, take a look at the following resources:
+### 5. **Orders (주문내역)**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 사용자가 지금까지 주문한 내역을 확인할 수 있는 화면
+- 주문 상세 정보, 배송 상태 등을 확인할 수 있음
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 6. **Profile (프로필)**
 
-## Deploy on Vercel
+- 사용자 계정 관리 화면
+- 개인 정보 수정, 비밀번호 변경, 배송지 관리 등의 기능 제공
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 7. **Wishlist (위시리스트)**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 사용자가 마음에 들어하는 상품을 저장해 둘 수 있는 목록
+- 나중에 구매하고자 하는 상품을 쉽게 찾을 수 있도록 함
+
+### 8. **Notifications (알림)**
+
+- 최신 알림, 프로모션, 할인 정보 등을 확인할 수 있는 화면
+- 중요한 알림을 놓치지 않도록 함
+
+### 9. **Customer Support (고객 지원)**
+
+- 고객 지원 센터로 연결되는 화면
+- FAQ, 문의하기, 채팅 지원 등의 기능 제공
+
+### 10. **Settings (설정)**
+
+- 앱 설정 화면
+- 알림 설정, 언어 설정, 테마 설정 등의 기능 제공
+
+### 메뉴바 구성 예시
+
+1. **Home (홈)**
+2. **Categories (카테고리)**
+3. **Search (검색)**
+4. **Cart (장바구니)**
+5. **Orders (주문내역)**
+6. **Profile (프로필)**
